@@ -1,3 +1,13 @@
+# JMusicBot-bypass
+
+**This is a fork of JMusicBot**, created to reverse unwanted changes first introduced in [upstream pull request #1486](https://github.com/jagrosh/MusicBot/pull/1486). This PR, which was first included in release version 0.4.0, makes the bot completely exit if it's run in an "unsupported manner", namely on a public or verified bot. This can cause many problems, especially if the bot is set to auto start in a systemd service, since default behavior will cause systemd to automatically restart it endlessly, causing the bot to contact the Discord API thousands of times in a short time period, further causing Discord to reset the bot token due to potential abuse.
+
+With this fork, instead of completely exiting the bot, it just throws an error, letting the user know that the behavior their bot is running under is unsupported, and that they shouldn't report bugs caused by said unsupported behavior. I believe the user should be free to run the bot however they like, even in the **unlikely** event that it might introduce undesired behavior.
+
+The only changes made in this fork are to modify the changes made in the aforementioned PR, and to redirect update checks and relevant URLs to this repository. I aim to keep this fork up to date with the latest upstream release. If at least 24 hours have passed since the latest upstream release and this fork hasn't been updated accordingly, please notify me by opening an issue in this fork or contacting me otherwise.
+
+The original code is completely copyright to jagrosh and the JMusicBot contributors, as per the Apache License.
+
 <img align="right" src="https://i.imgur.com/zrE80HY.png" height="200" width="200">
 
 # JMusicBot
