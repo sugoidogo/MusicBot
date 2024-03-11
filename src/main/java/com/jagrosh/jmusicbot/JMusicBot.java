@@ -126,7 +126,7 @@ public class JMusicBot
             String unsupportedReason = OtherUtil.getUnsupportedBotReason(jda);
             if (unsupportedReason != null)
             {
-                prompt.alert(Prompt.Level.ERROR, "JMusicBot", "Unsupported behavior detected: " + unsupportedReason);
+                prompt.alert(Prompt.Level.INFO, "JMusicBot", "Unsupported behavior detected: " + unsupportedReason);
             }
             
             // other check that will just be a warning now but may be required in the future
