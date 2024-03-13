@@ -51,7 +51,7 @@ body:
       options:
         - label: I have looked for information about this [within the documentation](https://jmusicbot.com/)
           required: true
-        - label: I have searched for similar issues [on the issues page of the original repository](https://github.com/jagrosh/MusicBot/issues?q=is%3Aissue), and [on the issues page for the fork](https://github.com/jagrosh/MusicBot/issues?q=is%3Aissue)
+        - label: I have searched for similar issues [on the issues page of the original repository](https://github.com/jagrosh/MusicBot/issues?q=is%3Aissue), and [on the issues page for the fork](https://github.com/sks316/MusicBot/issues?q=is%3Aissue)
           required: true
         - label: "I am running the latest version of the bot: ![Release](https://img.shields.io/github/release/sks316/MusicBot.svg)"
           required: true
