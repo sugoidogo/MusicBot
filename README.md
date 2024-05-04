@@ -14,7 +14,7 @@ This fork contains a modified version of [Craumix's Dockerfile](https://github.c
 
 Download `Dockerfile`, `docker-entrypoint.sh`, and `config.txt` from the `docker` folder in this repository. Edit the config.txt to add your token and owner ID, as well as any other changes you want to make, then build the image by running `docker build -t jmusicbot .`
 
-To make config changes or update the bot, redownload the files and build the image as explained above, then delete the old image with `docker image prune`.
+To make config changes or update the bot, redownload the files and build the image as explained above, then delete the old image and container with `docker container prune` and `docker image prune`.
 
 Run the bot with `docker run jmusicbot`.
 
