@@ -8,6 +8,16 @@ The only changes made in this fork are to modify the changes made in the aforeme
 
 The original code is completely copyright to jagrosh and the JMusicBot contributors, as per the Apache License.
 
+# Dockerfile
+
+This fork contains a modified version of [craumix's Dockerfile](https://github.com/craumix/jmb-container), as permitted by the MIT license.
+
+Download `Dockerfile`, `docker-entrypoint.sh`, and `config.txt` from the `docker` folder in this repository. Edit the config.txt to add your token and owner ID, as well as any other changes you want to make, then build the image by running `docker build -t jmusicbot .`
+
+To make config changes or update the bot, redownload the files and build the image as explained above, then delete the old image with `docker image prune`.
+
+Run the bot with `docker run jmusicbot`.
+
 <img align="right" src="https://i.imgur.com/zrE80HY.png" height="200" width="200">
 
 # JMusicBot
