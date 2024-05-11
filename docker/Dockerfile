@@ -1,6 +1,6 @@
 FROM openjdk:11-jre-slim
 
-ENV JMB_VERSION 0.4.0-bypass-ytfix
+ENV JMB_VERSION 0.4.1-bypass
 
 #No downloadable example config since 0.2.10
 RUN mkdir -p /jmb/config
