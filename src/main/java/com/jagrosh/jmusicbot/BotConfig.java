@@ -41,7 +41,7 @@ public class BotConfig
     private Path path = null;
     private String token, prefix, altprefix, helpWord, playlistsFolder, logLevel,
             successEmoji, warningEmoji, errorEmoji, loadingEmoji, searchingEmoji,
-            evalEngine;
+            evalEngine, YoutubeEmail, YoutubePwd;
     private boolean stayInChannel, songInGame, npImages, updatealerts, useEval, dbots;
     private long owner, maxSeconds, aloneTimeUntilStop;
     private int maxYTPlaylistPages;
@@ -98,6 +98,8 @@ public class BotConfig
             aliases = config.getConfig("aliases");
             transforms = config.getConfig("transforms");
             skipratio = config.getDouble("skipratio");
+            YoutubeEmail = config.getString("YoutubeEmail");
+            YoutubePwd = config.getString("YoutubePassword");
             dbots = owner == 113156185389092864L;
             
             // we may need to write a new config file
@@ -380,5 +382,15 @@ public class BotConfig
     public Config getTransforms()
     {
         return transforms;
+    }
+
+    public String getYoutubeEmail()
+    {
+        return YoutubeEmail;
+    }
+
+    public String getYoutubePwd()
+    {
+        return YoutubePwd;
     }
 }
